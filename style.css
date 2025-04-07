@@ -1,3 +1,4 @@
+
 body, html {
   margin: 0;
   padding: 0;
@@ -8,13 +9,13 @@ body, html {
 }
 
 .background {
-  background: url('Horizon.jpg') no-repeat center center/cover;
+  background: url('https://source.unsplash.com/1600x900/?horizon') no-repeat center center/cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -28,23 +29,42 @@ body, html {
   padding: 20px;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 18px;
-  max-width: 600px;
+.subheading {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
-.services, .container > .service-button {
+.services {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 20px;
-  max-width: 300px;
-  width: 100%;
+  margin-top: 10px;
 }
 
 .service-button {
@@ -66,11 +86,9 @@ p {
 
 footer {
   text-align: center;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
   font-size: 13px;
   color: #aaa;
+  margin-top: 20px;
 }
 
 .whatsapp-button {
@@ -85,4 +103,31 @@ footer {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   z-index: 10;
+}
+
+.about .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.team .member {
+  max-width: 400px;
+  text-align: center;
+}
+
+.team .left {
+  align-self: flex-start;
+}
+
+.team .right {
+  align-self: flex-end;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
